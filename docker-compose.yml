@@ -1,0 +1,7 @@
+services:
+  aco:
+    image: anhphant/exp2:latest
+    pull_policy: always
+    volumes:
+      - ./results_2p_origin_dsj1000:/app/results_2p_origin_dsj1000
+    command: ["--jobs", "${JOBS:-8}"]
